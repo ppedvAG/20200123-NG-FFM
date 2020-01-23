@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class DiceComponent implements OnInit {
+  zahl: number;
 
-  constructor() { }
+  constructor() {
+    this.zahl = Math.ceil(Math.random() *6);
+  }
 
   ngOnInit() {
   }
+
+
 
 }
