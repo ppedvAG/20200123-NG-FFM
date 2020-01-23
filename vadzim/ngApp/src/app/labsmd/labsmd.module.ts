@@ -4,6 +4,7 @@ import { LabsoverviewComponent } from './labsoverview/labsoverview.component';
 import { TimeComponent } from './time/time.component';
 import { DiceComponent } from './dice/dice.component';
 import { DicetestComponent } from './dicetest/dicetest.component';
+import { DiashowComponent } from './diashow/diashow.component';
 
 
 
@@ -12,7 +13,8 @@ import { DicetestComponent } from './dicetest/dicetest.component';
     LabsoverviewComponent,
     TimeComponent,
     DiceComponent,
-    DicetestComponent
+    DicetestComponent,
+    DiashowComponent
   ],
   imports: [
     CommonModule
