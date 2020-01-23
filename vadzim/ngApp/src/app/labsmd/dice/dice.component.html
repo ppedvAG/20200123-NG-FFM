@@ -1,1 +1,4 @@
 <p>{{zahl}}</p>
+<p *ngIf="zahl === 6"> Hurra!! Die höchste Zahl ist ausgefallen!</p>
+<p *ngIf="zahl % 2 === 0; else oddTemplate">gerade Zahl</p>
+<ng-template #oddTemplate>ungerade Zahl</ng-template>
