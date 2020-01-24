@@ -7,6 +7,8 @@ import { DicetestComponent } from './dicetest/dicetest.component';
 import { DiashowComponent } from './diashow/diashow.component';
 import { EventsComponent } from './events/events.component';
 import { TimerComponent } from './timer/timer.component';
+import { PwconfirmComponent } from './pwconfirm/pwconfirm.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -18,10 +20,12 @@ import { TimerComponent } from './timer/timer.component';
     DicetestComponent,
     DiashowComponent,
     EventsComponent,
-    TimerComponent
+    TimerComponent,
+    PwconfirmComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     LabsoverviewComponent
