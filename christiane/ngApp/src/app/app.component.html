@@ -1,8 +1,15 @@
 <h1>Name der App</h1>
 
-<app-labsoverview></app-labsoverview>
+<!-- <app-labsoverview></app-labsoverview>
 <app-todosoverview></app-todosoverview>
-<!--funktioniert so nicht-->
+ --><!--funktioniert so nicht-->
 <!--p [(title)]="'neuer Wert für Titel'">{{title}}<title></!--p-->
-
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" routerLink="/labs">LABS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/todos">TODOS</a>
+  </li>
+</ul>
 <router-outlet></router-outlet>

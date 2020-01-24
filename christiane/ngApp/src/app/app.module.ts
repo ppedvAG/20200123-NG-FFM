@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LabsmdlModule } from './labsmdl/labsmdl.module';
 import { TodosmdlModule } from './todosmdl/todosmdl.module';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     LabsmdlModule,
     TodosmdlModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
