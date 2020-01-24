@@ -6,6 +6,7 @@ import { DiceComponent } from './dice/dice.component';
 import { DicetestComponent } from './dicetest/dicetest.component';
 import { DiashowComponent } from './diashow/diashow.component';
 import { EventsComponent } from './events/events.component';
+import { TimerComponent } from './timer/timer.component';
 
 
 
@@ -16,7 +17,8 @@ import { EventsComponent } from './events/events.component';
     DiceComponent,
     DicetestComponent,
     DiashowComponent,
-    EventsComponent
+    EventsComponent,
+    TimerComponent
   ],
   imports: [
     CommonModule

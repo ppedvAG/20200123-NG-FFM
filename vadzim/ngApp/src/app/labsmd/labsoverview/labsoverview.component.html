@@ -21,4 +21,13 @@
 
 <hr>
 <app-events></app-events>
+<hr>
+
+<app-timer [seconds]="5" (startEvent)="handleStart()" (tickEvent)="handleTick($event)" (endEvent)="handleEnd($event)"></app-timer>
+<p>{{ startMessage}}</p>
+<p>{{ timerMessage}}</p>
+<p>{{ endMessage }}</p>
+<p>From Child: {{ endMessageFromChild }}</p>
+
+<hr>
 
