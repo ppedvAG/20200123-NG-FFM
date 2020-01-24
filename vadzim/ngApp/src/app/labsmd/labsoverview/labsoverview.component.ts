@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-labsoverview',
   templateUrl: './labsoverview.component.html',
   styles: []
 })
-export class LabsoverviewComponent implements OnInit {
+export class LabsoverviewComponent implements OnInit, OnDestroy {
   startMessage : string;
   timerMessage: string;
   endMessage: string;
@@ -31,5 +31,9 @@ export class LabsoverviewComponent implements OnInit {
     this.endMessageFromChild = msg;
   }
 
+  ngOnDestroy()
+  {
+    console.log('labsoverview destroyed');
+  }
 
 }

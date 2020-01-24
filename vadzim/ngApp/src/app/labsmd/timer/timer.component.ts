@@ -12,7 +12,8 @@ export class TimerComponent implements OnInit {
   @Output() endEvent: EventEmitter<string> = new EventEmitter<string>();
 
   remainingTime: number;
-  intervalId: NodeJS.Timer; // ist später trotzdem einfach nur number. warum ???
+ // intervalId: NodeJS.Timer; // ist später trotzdem einfach nur number. warum ???
+  intervalId: number; // ist später trotzdem einfach nur number. warum ???
   // started: boolean;
   endMessage: string;
 
@@ -25,7 +26,7 @@ export class TimerComponent implements OnInit {
     this.startEvent.emit();
     this.remainingTime = this.seconds;
     // this.started = true;
-    this.intervalId = setInterval(() => {
+    this.intervalId = window.setInterval(() => {
       this.remainingTime--;
       this.tickEvent.emit(this.remainingTime);
       if (this.remainingTime === 0) {

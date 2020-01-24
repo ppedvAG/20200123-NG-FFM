@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LabsmdModule } from './labsmd/labsmd.module';
 import { TodosmdModule } from './todosmd/todosmd.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { TodosmdModule } from './todosmd/todosmd.module';
     AppRoutingModule,
     LabsmdModule,
     TodosmdModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
