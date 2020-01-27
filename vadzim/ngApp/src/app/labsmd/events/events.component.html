@@ -1,0 +1,5 @@
+<h3>Events</h3>
+<!-- <input type="number" #myInput name="" id="" [(size)]="myInput.value"> -->
+<input type="number" name="" id="" (input)="changeSize($event.target.value)">
+<div [style.font-size.px]="size" (mouseenter)="home()" (mouseleave)="away()">{{getText()}}</div>
+<p>{{size}}</p>

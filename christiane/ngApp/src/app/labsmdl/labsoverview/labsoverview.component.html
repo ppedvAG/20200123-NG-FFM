@@ -1,0 +1,37 @@
+<p>labsoverview works!</p>
+<h2>LABS OVERVIEW</h2>
+
+<h3>Beispiele Time</h3>
+<app-time></app-time>
+
+<h3>Beispiel Dice</h3>
+ <app-dice></app-dice>
+<p>----------------------------------------------------------------</p>
+ <h3>Beispiel Event</h3>
+ <app-events></app-events>
+
+ <p>----------------------------------------------------------------</p>
+
+
+<h3>Beispiele Diashow (Input, ngOnInit</h3>
+<app-diashow [images]="[
+'https://picsum.photos/300/200?image=0',
+'https://picsum.photos/300/200?image=1',
+'https://picsum.photos/300/200?image=2',
+'https://picsum.photos/300/200?image=3'
+]"></app-diashow>
+
+
+<app-timer [seconds]="10" (startEvent)="handleStart()" (tickEvent)="handleTick($event)"></app-timer>
+<p>{{startMessage}}</p>
+<p>{{timerMessage}}</p>
+<p>{{endMessage}}</p>
+
+<p>----------------------------------------------------------------</p>
+
+
+<h3>Beispiel Passwort</h3>
+ <app-pwconfirmer></app-pwconfirmer>
+
+ <p>----------------------------------------------------------------</p>
+

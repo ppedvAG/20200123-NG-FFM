@@ -1,0 +1,7 @@
+<p [style.font-size.px]="getDiceValue(diceValue)" [class.biggest]="diceValue ===5">{{diceValue}}</p>
+<p *ngIf="diceValue === 6">Hurra. Die höchste Zahl getroffen!</p>
+<p *ngIf="diceValue % 2 === 0; else oddTemplate">Gerade Zahl!</p>
+<ng-template #oddTemplate>Ungerade Zahl!</ng-template>
+
+
+

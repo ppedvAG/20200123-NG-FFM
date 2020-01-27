@@ -1,0 +1,35 @@
+<h2>LABS OVERVIEW</h2>
+
+<h3>Beispiel Time (class-props, constructor)</h3>
+<app-time></app-time>
+<hr>
+
+<h3>Beispiel Dice (constructor)</h3>
+<app-dice></app-dice>
+<hr>
+
+<h3>Dice Test (automatisches Aktualisieren???)</h3>
+<!-- <app-dicetest></app-dicetest> -->
+
+<h3>Beispie Diashow (Input, ngOnInit)</h3>
+<app-diashow [images]="[
+'https://picsum.photos/300/200?image=0',
+'https://picsum.photos/300/200?image=10',
+'https://picsum.photos/300/200?image=20',
+'https://picsum.photos/300/200?image=30'
+]"></app-diashow>
+
+<hr>
+<app-events></app-events>
+<hr>
+
+<app-timer [seconds]="5" (startEvent)="handleStart()" (tickEvent)="handleTick($event)" (endEvent)="handleEnd($event)"></app-timer>
+<p>{{ startMessage}}</p>
+<p>{{ timerMessage}}</p>
+<p>{{ endMessage }}</p>
+<p>From Child: {{ endMessageFromChild }}</p>
+
+<hr>
+
+<app-pwconfirm></app-pwconfirm>
+
