@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LabsmdModule } from './labsmd/labsmd.module';
 import { TodosmdModule } from './todosmd/todosmd.module';
 import { HttpClientModule } from '@angular/common/http';
+import { DirectivesmdModule } from './directivesmd/directivesmd.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     LabsmdModule,
     TodosmdModule,
+    DirectivesmdModule,
     FormsModule,
     HttpClientModule
   ],
