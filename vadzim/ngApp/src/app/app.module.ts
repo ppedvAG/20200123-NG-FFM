@@ -8,7 +8,6 @@ import { LabsmdModule } from './labsmd/labsmd.module';
 import { TodosmdModule } from './todosmd/todosmd.module';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   declarations: [
     AppComponent
