@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DoverviewComponent } from './doverview/doverview.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [DoverviewComponent],
   imports: [
     CommonModule
   ]
