@@ -1,0 +1,12 @@
+<h3>Events</h3>
+>
+<input type="number" name="" id="" (input)="changeSize($event.target.value)" />
+<div
+  id="divEvent"
+  [style.font-size.px]="size"
+  (mouseleave)="changeText($event)"
+  [className]="isHome ? 'home' : 'away'"
+>
+  {{ text }}
+</div>
+<p>{{ size }}</p>

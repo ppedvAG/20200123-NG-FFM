@@ -1,0 +1,35 @@
+<h2>Labs Overview</h2>
+
+<h3>Beispiel Time (constructor)</h3>
+<app-time></app-time>
+<hr />
+
+<app-timer
+  [seconds]="4"
+  (startEvent)="handlerStart()"
+  (ticketEvent)="handlerTick($event)"
+  (TimeAbgelaufenEvent)="handlerTimeAbgelaufen($event)"
+></app-timer>
+<p>{{ startMessage }}</p>
+<p>{{ timerMessage }}</p>
+<p>{{ timeAbgelaufen }}</p>
+<hr />
+
+<h3>Beispiel Dice (constructor)</h3>
+<app-dice></app-dice>
+<hr />
+
+<app-passwordconfirm></app-passwordconfirm>
+<hr />
+
+<h3>Beispiel Diashow (Input, ngOnInit)</h3>
+<app-diashow
+  [images]="[
+    'https://picsum.photos/300/200?image=0',
+    'https://picsum.photos/300/200?image=1',
+    'https://picsum.photos/300/200?image=2',
+    'https://picsum.photos/300/200?image=3'
+  ]"
+></app-diashow>
+<hr />
+<app-events></app-events>
