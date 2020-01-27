@@ -1,0 +1,8 @@
+.biggest {
+  color: pink;
+  border: thick solid pink;
+  border-radius: 50%;
+  font-size: 60px;
+  text-align: center;
+  width: 50px;
+}

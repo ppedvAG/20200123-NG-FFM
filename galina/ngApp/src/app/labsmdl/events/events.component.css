@@ -1,0 +1,12 @@
+.home {
+  background-color: yellow;
+  font-size: 30px;
+  color: black;
+  width: 100px;
+}
+.away {
+  background-color: black;
+  font-size: 30px;
+  color: yellow;
+  width: 100px;
+}

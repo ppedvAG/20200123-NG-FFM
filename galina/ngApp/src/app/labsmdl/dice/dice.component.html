@@ -1,0 +1,9 @@
+<p
+  [style.font-size.px]="getFontSize(Zufallszahl)"
+  [class.biggest]="Zufallszahl === 6"
+>
+  {{ Zufallszahl }}
+</p>
+<p *ngIf="Zufallszahl % 2 === 0; else oddTemplate">gerade Zahl</p>
+<ng-template #oddTemplate>ungerade Zahl</ng-template>
+<!-- <p>{{ getRandom(1, 6) }}</p> -->
