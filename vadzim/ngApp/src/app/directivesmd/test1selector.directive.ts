@@ -1,10 +1,13 @@
 import { Directive } from '@angular/core';
+import { Bigmaker } from './bigmaker';
 
 @Directive({
-  selector: '[appTest1selector]'
+  selector: 'bigmaker-holder',
+  exportAs: 'testttt'
 })
 export class Test1selectorDirective {
-
-  constructor() { }
-
+  bigmaker: Bigmaker;
+  constructor(bigmaker: Bigmaker) {
+    this.bigmaker = bigmaker;
+  }
 }
