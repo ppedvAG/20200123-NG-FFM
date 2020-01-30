@@ -1,0 +1,37 @@
+<!-- Das ist ein Beispiel aus dem ppedv-Blog -->
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Count numbers: <output id="result"></output></p>
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+    <br>
+    <br>
+
+    <script>
+        var w;
+        function startWorker() {
+            if (typeof (Worker) !== "undefined") { //For slightly more controlled error handling and backwards compatibility, it is a good idea to wrap your worker accessing code in the following  if (window.Worker) {...}
+                if (typeof (w) == "undefined") {
+                    // Error: script cannot be accessed from origin 'null'.
+                    // Grund: Browsers don't allow creating workers from local files because that would be a security issue.
+                    // https://en.wikipedia.org/wiki/Same-origin_policy
+                    // ???
+                    w = new Worker("workerbsp.js");
+                }
+                w.onmessage = function (event) {
+                    document.getElementById("result").innerHTML = event.data;
+                };
+            } else {
+                document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+            }
+        }
+        function stopWorker() {
+            w.terminate();
+            w = undefined; //wird damit die Variable auch gelöscht?
+        }
+    </script>
+</body>
+
+</html>
