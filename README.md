@@ -327,3 +327,5 @@ ng > rendering
 [ivy](https://angular.io/guide/ivy)
 
 ---
+Angular SPA Kurs Schulung PPEDV AG 
+http://www.ppedv.de/Schulung/Kurse/AngularJS-JavaScript-SinglePage-WebApp-SPA-MVC-MVVM-Seminar-Training.aspx
